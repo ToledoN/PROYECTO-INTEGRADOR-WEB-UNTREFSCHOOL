@@ -1,0 +1,188 @@
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  section {
+    scroll-margin-top: 80px;
+  }
+
+  /* Barra de navegación */
+  header {
+      background-color: #00425A
+    }
+
+    header ul {
+    font-family: Poppins !important;
+    font-weight: 600;
+    }
+
+
+
+    header ul li a {
+      color: white !important;
+    }
+    
+    header img {
+        width: 200px;
+    }
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        flex-grow: 0;
+    }
+
+
+/* Botón de contacto */
+
+#flotante {
+	position:fixed;
+	height:50px;
+	bottom:40px;
+	right:30px;
+	background-color: #00425A;
+    font-family: Poppins;
+    font-weight: 600;
+	border-radius:50px;
+	text-align:center;
+    box-shadow: 2px 3px 7px -1px rgba(0,0,0,0.67);
+    z-index: 20;
+    border: 0;
+}
+
+#flotante a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Quiénes somos */
+
+#quienes .container-fluid {
+    padding-top: 80px;
+}
+
+/* Por qué elegirnos */
+#razones {
+    background-color: #1F8A70;
+    color: white;
+}
+
+/* Propuestas educativas */
+
+#propuestas h2 {
+    font-weight: 900;
+}
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.carousel-caption h5 {
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+/* Últimas noticias */
+
+#ultimas-noticias {
+background-color: #1F8A70;
+}
+
+#ultimas-noticias h2 {
+    font-weight: 900;
+}
+
+#ultimas-noticias img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #00425A
+}
+
+/* Footer */
+
+footer .container-fluid {
+    background-color: #00425A;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+footer * {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 1.25rem;
+}
+
+/* Página formulario */
+
+
+
+#formulario-contacto label, #formulario-contacto button  {
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+#formulario-contacto input, #formulario-contacto textarea {
+    font-family: Poppins;
+    font-size: 0.8rem;
+}
+
+#formulario-contacto input {
+    height: 40px;
+}
+
+#formulario-contacto button:hover {
+    background-color: #00384d;
+}
+
+/* Texto */
+
+h1 {
+    font-family: Belanosima;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+p {
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 1023px) { 
+    .navbar-toggler {
+    display: none;
+     }
+    .navbar-expand-xl {
+         flex-wrap: nowrap;
+         justify-content: flex-start;
+    }
+    .navbar-nav {
+         flex-direction: row !important;
+    }
+    .navbar-expand-xl .navbar-nav .nav-link {
+     padding-right: var(--bs-navbar-nav-link-padding-x);
+     padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+}
+
+@media (max-width: 1023px) {
+    header ul li:nth-child(odd) {
+        background-color: #00384d;
+    }
+}
